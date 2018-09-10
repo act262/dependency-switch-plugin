@@ -1,7 +1,9 @@
 include ':sample'
 
+/* just for plugin developer */
 include ':plugin'
 
+/* here usage */
 buildscript {
     repositories {
         mavenLocal()
