@@ -1,0 +1,15 @@
+include ':sample'
+
+include ':plugin'
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfz.plugin:dependency-switch:0.0.1'
+    }
+}
+
+apply plugin: 'com.jfz.plugin.dependency-switch'
