@@ -42,7 +42,10 @@ class DependencySwitchPlugin implements Plugin<Settings> {
             return
         }
 
-        def depMap = list.grep { isValidProject(it) }.collectEntries { [it.name, it] }
+        def depMap = list.grep { isValidProject(it) && isOpen(it) }
+                .collectEntries {
+            [it.name, it]
+        }
 
         settings.gradle.settingsEvaluated {
             depMap.each {
@@ -68,6 +71,10 @@ class DependencySwitchPlugin implements Plugin<Settings> {
                 }
             }
         }
+    }
+
+    static boolean isOpen(Map json) {
+        json.get('open', true)
     }
 
     static boolean isValidProject(def it) {

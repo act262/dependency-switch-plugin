@@ -1,6 +1,7 @@
 [
   {
     "name": "matisse",
-    "dir": "../Matisse/matisse"
+    "dir": "../Matisse/matisse",
+    "open": true
   }
 ]
