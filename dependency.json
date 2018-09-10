@@ -3,5 +3,9 @@
     "name": "matisse",
     "dir": "../Matisse/matisse",
     "open": true
+  },
+  {
+    "name": "library",
+    "dir": "sample/library_source/library"
   }
 ]
