@@ -1,4 +1,4 @@
-package com.jfz.plugin.dsp
+package io.zcx.plugin
 
 import groovy.json.JsonSlurper
 import org.gradle.api.Plugin

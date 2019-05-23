@@ -10,8 +10,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.jfz.plugin:dependency-switch:0.0.1'
+        classpath 'io.zcx.plugin:dependency-switch:1.0.0'
     }
 }
 
-apply plugin: 'com.jfz.plugin.dependency-switch'
+apply plugin: 'io.zcx.plugin.dependency-switch'
