@@ -6,6 +6,7 @@
   },
   {
     "name": "library",
-    "dir": "sample/library_source/library"
+    "dir": "sample/library_source/library",
+    "open": false
   }
 ]

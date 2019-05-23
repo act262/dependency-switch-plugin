@@ -1,3 +1,10 @@
+## LIKE
+
+使用gradle的 组合构建以及替换功能实现
+```
+includeBuild('xxx')
+```
+
 ### What
 1. 主要用在模块化开发的项目中，将依赖的构建切换到对应的源码工程，方便修改和调试代码
 2. 方便对三方库的调试和修改
@@ -10,11 +17,11 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.jfz.plugin:dependency-switch:0.0.1'
+        classpath 'io.zcx.plugin:dependency-switch:1.0.0'
     }
 }
 
-apply plugin: 'com.jfz.plugin.dependency-switch'
+apply plugin: 'io.zcx.plugin.dependency-switch'
 ```
 然后在同级目录下创建一个`dependency.json`文件，参考sample中写法
 默认使用`dependency.json`，当然也可以在`gradle.properties`中指定文件名

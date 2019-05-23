@@ -33,5 +33,5 @@ dependencies {
         exclude group: 'com.android.support'
     }
 
-    implementation 'com.jfz.library:library:1.0'
+//    implementation 'com.jfz.library:library:1.0'
 }
